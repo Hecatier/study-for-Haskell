@@ -3,7 +3,7 @@ fibonacci 0 = 0
 fibonacci 1 = 1
 fibonacci n
     | (n > 1) = fibonacci (n-1) + fibonacci (n-2)
-    | (n < 0) = (pow (-1) (n+1)) * fibonacci (abs n)
+    | (n < 0) = pow (-1) (n+1) * fibonacci (abs n)
 
 
 --Int型なので負の累乗が来ると小数でなくて0を返す
